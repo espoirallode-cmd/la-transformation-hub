@@ -18,16 +18,16 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 flex flex-col items-center justify-center text-center relative z-10 w-full max-w-5xl mt-6 flex-1">
 
         {/* Top Badge / Pill */}
-        <div className="section-fade flex items-center justify-center gap-3 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-8">
-          <span className="text-sm font-medium text-white/90">Plus de 500 personnes transformées</span>
-          <div className="flex -space-x-2">
-            <div className="w-6 h-6 rounded-full border-2 border-background bg-primary/20 flex items-center justify-center overflow-hidden">
+        <div className="section-fade flex items-center justify-center gap-2 sm:gap-3 px-3 sm:px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-8 whitespace-nowrap max-w-[95vw]">
+          <span className="text-[12px] sm:text-sm font-medium text-white/90">Plus de 500 personnes transformées</span>
+          <div className="flex -space-x-1.5 sm:-space-x-2 shrink-0">
+            <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border-[1.5px] border-white bg-primary/20 flex items-center justify-center overflow-hidden">
               <img src="https://i.pravatar.cc/100?img=1" alt="Avatar" className="w-full h-full object-cover opacity-80" />
             </div>
-            <div className="w-6 h-6 rounded-full border-2 border-background bg-primary/20 flex items-center justify-center overflow-hidden">
+            <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border-[1.5px] border-white bg-primary/20 flex items-center justify-center overflow-hidden">
               <img src="https://i.pravatar.cc/100?img=5" alt="Avatar" className="w-full h-full object-cover opacity-80" />
             </div>
-            <div className="w-6 h-6 rounded-full border-2 border-background bg-primary/20 flex items-center justify-center overflow-hidden">
+            <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border-[1.5px] border-white bg-primary/20 flex items-center justify-center overflow-hidden">
               <img src="https://i.pravatar.cc/100?img=9" alt="Avatar" className="w-full h-full object-cover opacity-80" />
             </div>
           </div>
@@ -76,7 +76,7 @@ const HeroSection = () => {
               </div>
             </div>
           ]}
-          velocity={20}
+          velocity={50}
         />
       </div>
 
