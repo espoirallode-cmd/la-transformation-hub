@@ -118,10 +118,9 @@ const FAQSection = () => {
               </button>
 
               <div
-                className="overflow-hidden transition-all duration-300 relative z-10"
+                className="relative z-10"
                 style={{
-                  maxHeight: openIndex === i ? "200px" : "0",
-                  opacity: openIndex === i ? 1 : 0,
+                  display: openIndex === i ? "block" : "none",
                 }}
               >
                 <div className="w-full h-px bg-white/5 mb-0" />

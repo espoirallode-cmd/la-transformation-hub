@@ -14,8 +14,9 @@ const OffersSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 section-fade max-w-2xl mx-auto">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Choisissez le parcours
-            <br />qui vous correspond
+            Choisissez le
+            <br />
+            parcours qui vous correspond
           </h2>
           <p className="font-body text-white/50 text-base md:text-lg">
             Mon approche est adaptable. Commencez en douceur avec l'offre Éveil, ou passez à la vitesse supérieure avec la Métamorphose pour une transformation profonde et accompagnée.

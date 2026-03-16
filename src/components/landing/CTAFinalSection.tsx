@@ -135,9 +135,9 @@ const CTAFinalSection = () => {
 
           {/* Main heading */}
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-white mb-5 leading-tight">
-            Le premier pas est toujours
+            Le premier pas est 
             <br />
-            le plus courageux.
+            toujours le plus courageux.
             <span className="blinking-cursor-cta" />
           </h2>
 
