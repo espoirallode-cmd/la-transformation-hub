@@ -35,8 +35,10 @@ const HeroSection = () => {
 
         {/* Title */}
         <h1 className="section-fade font-heading text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-bold text-white leading-[1.05] tracking-tight mb-8">
-          Reprenez le pouvoir<br />
-          sur votre vie
+          {/* Version Desktop */}
+          <span className="hidden sm:block">Reprenez le pouvoir<br />sur votre vie</span>
+          {/* Version Mobile */}
+          <span className="sm:hidden">Reprenez le pouvoir sur<br />votre vie</span>
         </h1>
 
         {/* Subtitle */}
