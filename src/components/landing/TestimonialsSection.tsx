@@ -1,5 +1,3 @@
-import DotGrid from "./DotGrid";
-
 const testimonials = [
   {
     name: "Claire M.",
@@ -88,8 +86,6 @@ const TestimonialCard = ({ t }: { t: typeof testimonials[0] }) => (
 const TestimonialsSection = () => {
   return (
     <section id="temoignages" className="py-20 md:py-28 relative overflow-hidden bg-[#07070a]">
-      <DotGrid baseColor="#2a2a2a" activeColor="#ffffff" dotSize={4} gap={28} proximity={140} />
-
       <style>{`
         /* ---------- Continuous Marquee Slider ---------- */
         .t-slider {

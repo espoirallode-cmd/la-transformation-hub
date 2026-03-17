@@ -2,7 +2,6 @@ import { useState } from "react";
 import transfo1 from "@/assets/transformation-1.jpg";
 import transfo2 from "@/assets/transformation-2.jpg";
 import transfo3 from "@/assets/transformation-3.jpg";
-import DotGrid from "./DotGrid";
 
 const transformations = [
   {
@@ -32,7 +31,6 @@ const BeforeAfterSection = () => {
 
   return (
     <section className="py-20 md:py-28 relative overflow-hidden bg-[#07070a]">
-      <DotGrid baseColor="#2a2a2a" activeColor="#ffffff" dotSize={4} gap={28} proximity={140} />
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-14 section-fade">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">

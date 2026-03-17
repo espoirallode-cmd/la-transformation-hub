@@ -1,5 +1,3 @@
-import DotGrid from "./DotGrid";
-
 const mirrorCards = [
   {
     text: "Tu évites les miroirs et les photos de groupe.",
@@ -23,14 +21,6 @@ const mirrorCards = [
 const MirrorSection = () => {
   return (
     <section id="miroir" className="py-20 md:py-28 relative overflow-hidden bg-[#07070a]">
-      {/* Interactive Dot Grid Background */}
-      <DotGrid
-        baseColor="#2a2a2a"
-        activeColor="#ffffff"
-        dotSize={4}
-        gap={28}
-        proximity={140}
-      />
       <style>{`
         .slider {
           width: 100%;
