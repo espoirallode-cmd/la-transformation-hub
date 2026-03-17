@@ -20,7 +20,20 @@ const mirrorCards = [
 
 const MirrorSection = () => {
   return (
-    <section id="miroir" className="py-20 md:py-28 relative overflow-hidden bg-[#07070a]">
+    <section id="miroir" className="py-20 md:py-28 relative overflow-visible bg-[#07070a]">
+      {/* Shadow overlay that bleeds upward over the Hero section */}
+      <div
+        style={{
+          position: "absolute",
+          top: "-120px",
+          left: 0,
+          right: 0,
+          height: "160px",
+          background: "linear-gradient(to bottom, transparent 0%, #07070a 100%)",
+          zIndex: 20,
+          pointerEvents: "none",
+        }}
+      />
       <style>{`
         .slider {
           width: 100%;

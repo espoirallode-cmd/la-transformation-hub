@@ -56,6 +56,8 @@ const row2 = testimonials.slice(3);
 
 const CARD_W = 340;
 const CARD_H = 220;
+const CARD_W_MOBILE = 240;
+const CARD_H_MOBILE = 170;
 const QUANTITY_1 = row1.length;
 const QUANTITY_2 = row2.length;
 const DURATION = "18s";
@@ -145,6 +147,29 @@ const TestimonialsSection = () => {
         .testimonial-card:hover {
           border-color: hsl(var(--primary) / 0.4);
           box-shadow: 0 8px 32px rgba(0,0,0,0.5), 0 0 0 1px hsl(var(--primary) / 0.2);
+        }
+
+        @media (max-width: 640px) {
+          .testimonial-card {
+            width: ${CARD_W_MOBILE}px;
+            height: ${CARD_H_MOBILE}px;
+            padding: 14px;
+            border-radius: 12px;
+          }
+          .t-slider {
+            height: ${CARD_H_MOBILE}px;
+          }
+          .t-text {
+            font-size: 11px;
+            line-height: 1.4;
+          }
+          .t-name { font-size: 11px; }
+          .t-role { font-size: 10px; }
+          .t-star { font-size: 11px; }
+          .t-avatar { width: 28px; height: 28px; font-size: 9px; }
+          .t-author { gap: 8px; margin-top: 10px; }
+          .t-stars { margin-bottom: 6px; }
+          .flex.flex-col.gap-\[16px\] { gap: 10px; }
         }
 
         .t-card-glow {
