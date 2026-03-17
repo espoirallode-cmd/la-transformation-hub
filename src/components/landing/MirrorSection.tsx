@@ -25,11 +25,11 @@ const MirrorSection = () => {
       <div
         style={{
           position: "absolute",
-          top: "-120px",
+          top: "-260px",
           left: 0,
           right: 0,
-          height: "160px",
-          background: "linear-gradient(to bottom, transparent 0%, #07070a 100%)",
+          height: "320px",
+          background: "linear-gradient(to bottom, transparent 0%, #07070a 80%)",
           zIndex: 20,
           pointerEvents: "none",
         }}
