@@ -271,18 +271,7 @@ const MirrorSection = () => {
 
         .cyber-card:hover .card-glare { opacity: 1; }
 
-        .scan-line {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(to bottom, transparent, hsl(var(--primary) / 0.1), transparent);
-          transform: translateY(-100%);
-          animation: scanMove 2s linear infinite;
-        }
 
-        @keyframes scanMove {
-          0% { transform: translateY(-100%); }
-          100% { transform: translateY(100%); }
-        }
 
         .corner-elements span {
           position: absolute;
@@ -349,7 +338,7 @@ const MirrorSection = () => {
                         <span></span><span></span><span></span><span></span>
                       </div>
 
-                      <div className="scan-line"></div>
+
                     </div>
                   </div>
                 </div>
