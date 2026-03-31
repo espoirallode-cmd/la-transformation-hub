@@ -68,9 +68,22 @@ const OffersSection = () => {
             <p className="text-white/60 text-sm mb-8 min-h-[40px]">Débloquez un nouveau niveau d'énergie physique et mentale.</p>
             
             <div className="flex flex-wrap items-center gap-3 mb-8">
-              <div className="flex items-baseline gap-1">
-                <span className="text-white text-5xl font-bold">397€</span>
-                <span className="text-white/50 text-sm">/ mois</span>
+              <div className="flex flex-col gap-0.5">
+                {includeAddon && (
+                  <span className="text-white/30 text-2xl font-bold line-through leading-none">397€</span>
+                )}
+                <div className="flex items-baseline gap-1">
+                  <span
+                    className="text-white font-bold leading-none transition-all duration-300"
+                    style={{ fontSize: "3rem" }}
+                  >
+                    {includeAddon ? "494€" : "397€"}
+                  </span>
+                  <span className="text-white/50 text-sm">/ mois</span>
+                </div>
+                {includeAddon && (
+                  <span className="text-primary/80 text-xs mt-0.5">397€ + 97€ (Séance Flash)</span>
+                )}
               </div>
               <span className="px-3 py-1 bg-primary/20 text-primary border border-primary/30 rounded-full text-xs font-bold tracking-wide">
                 POPULAIRE
